@@ -41,9 +41,9 @@ Ideas across politics, society, work, AI, Bitcoin and sports surface in random c
 
 ### In Scope (Phase 1)
 
-- Repo `Justinohallo/ideas` (private) with CLAUDE.md schema, templates, index, log
-- Six operations: capture, interview, compile, query, lint, extract
-- Capture from any Claude chat surface into `raw/`
+- Repo `Justinohallo/ideas` (private), scaffolded as a Domain OS with harness `wiki-tools` (os-init)
+- Six operations: capture, interview, ingest, query, lint, extract (see CLAUDE.md)
+- Capture from the claude.ai Project "Ideas" into `wiki/_source/_inbox/`
 
 ### Explicitly Out of Scope
 
@@ -68,13 +68,12 @@ MVP is the repo as scaffolded plus a capture surface. Full build would add a sch
 
 **Hard constraints:**
 - Repo stays private. No secondary remotes.
-- `raw/` is immutable.
+- `wiki/_source/` is immutable.
 
 ---
 
 ## Open Questions
 
-- [ ] Capture surface: a dedicated claude.ai Project "Ideas" pointing at this repo, or capture from any chat? (Justin)
 - [ ] Boundary with Digital Twin `journal/`: a passing thought in a journal entry, does it get copied here, or only things Justin explicitly flags as ideas? (Justin)
 - [ ] Monthly lint as a scheduled task, or on demand only? (Justin)
 
